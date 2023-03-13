@@ -14,7 +14,7 @@ gem "decidim", Decidim::Cleaner::DECIDIM_VERSION
 gem "decidim-cleaner", path: "."
 
 gem "bootsnap", "~> 1.4"
-gem "puma", ">= 4.3"
+gem "puma", ">= 5.5.1"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -24,9 +24,9 @@ end
 
 group :development do
   gem "faker", "~> 2.14"
-  gem "letter_opener_web", "~> 2.0"
+  gem "letter_opener_web", "~> 1.3"
   gem "listen", "~> 3.1"
   gem "spring", "~> 2.0"
   gem "spring-watcher-listen", "~> 2.0"
-  gem "web-console", "~> 4.2"
+  gem "web-console", "4.0.4"
 end
