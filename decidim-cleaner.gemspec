@@ -5,7 +5,7 @@ $LOAD_PATH.push File.expand_path("lib", __dir__)
 require "decidim/cleaner/version"
 
 Gem::Specification.new do |s|
-  s.version = Decidim::Cleaner.version
+  s.version = Decidim::Cleaner::VERSION
   s.authors = ["Quentinchampenois"]
   s.email = ["26109239+Quentinchampenois@users.noreply.github.com"]
   s.license = "AGPL-3.0"
@@ -25,5 +25,5 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
 
-  s.add_dependency "decidim-core",  "~> #{Decidim::Cleaner.decidim_version}"
+  s.add_dependency "decidim-core", Decidim::Cleaner::DECIDIM_VERSION
 end
